@@ -22,6 +22,7 @@ public class Market {
             toys.add(toy);
         }
     }
+
     public void setWeight(int toyId, double weight){
         for(Toys t :toys){
             if (t.getId() == toyId){

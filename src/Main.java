@@ -23,11 +23,13 @@ public class Main {
             for(String toy : toyList){
                 System.out.println(toy);
             }
+
             ArrayList<Toys> winners = market.playGame(1);
-            System.out.println("Выиграли следующие игрушки: ");
             for(Toys t : winners){
+                System.out.println("Выиграли следующие игрушки: ");
                 System.out.println(t.getName());
             }
+
             market.saveToFile(FILENAME);
         }catch (IOException e){
             System.out.println("Ошибка при работе с файлами: " +e.getMessage());
